@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--
+
     <com.google.android.cameraview.CameraView
         android:id="@+id/camera"
         android:layout_width="match_parent"
@@ -14,13 +14,7 @@
         app:aspectRatio="3:4"
         android:adjustViewBounds="true"
         app:facing="back"
-        app:flash="auto"/>-->
-
-    <com.wonderkiln.camerakit.CameraView
-        android:id="@+id/camera"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true" />
+        app:flash="auto"/>
     <TextView
         android:id="@+id/txtCoordenadas"
         android:layout_width="100dp"
