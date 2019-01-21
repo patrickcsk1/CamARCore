@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:autoFocus="true"
+        app:aspectRatio="3:4"
+        android:adjustViewBounds="true"
+        app:facing="back"
+        app:flash="auto"/>-->
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/txtCoordenadas"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="11dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.example.patrick.paintCamera.Dibujo
+            android:id="@+id/fondo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#5e000000"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="0dp" />
+            <Button
+                android:id="@+id/botonLimpiar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:text="Limpiar" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/btnFoto"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="CAPTURA" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
