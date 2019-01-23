@@ -1,0 +1,199 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b0de2a49be6dadcf29b3ec6e20e001a2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\abdf61dc0d3acf07dca90bfd0e4b9698\AndroidManifest.xml:2:1-11:12
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:1-30:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4626ce2a962ba5ec7b1093591093426c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8321a77b8cd0ba66170633b1d4a0d474\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\82b41246e88ab3bbe7023ad0ecb60f3b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\3634f8977480a012a73642cbb8cd7e2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\f55474dd5420ab4e8e327cc76f815658\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd7854eb5e076d0bdc2e3dc10a13262b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b0d56a96d92eb90eb43a0be1b1013b29\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2786093aed6c4dd8b79f54f0f7bfadc1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c350e335ea289f5319b3fa5755d2873a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b6fc3e37a431121c53516b9eb475d4cb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\76554bae56ac91da4f0c10ecce9d13b4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2e4133b0aa5f513ac5279ee415539e2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6e1cc48e3ce48473de847012768ebc67\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\84935d9a7bf139c5fa89abb8b775db26\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\48f5954674a4218fdf21c25bbc0825de\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\067182dbf2eec99761b4d7f1f08923c8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4ef543542325512669c71587f871c2c5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\af38102241dd49dd08c46d1c89eec8f4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01a5459126bbca59495f3c5e56e372d8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3940ac512193bc524f67ec501f26fcd2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1970293dc504cfe2d58fb8911fbbc2c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5a27209f07f2d94900586069f88b6761\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\5f41be7dcb4c5bc8dc2b644c81178765\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\72804fc2f8dd7caa9565e1593271d239\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:5:5-64
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:5-65
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:5:22-62
+uses-feature#android.hardware.camera2.full
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:6:19-63
+application
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\abdf61dc0d3acf07dca90bfd0e4b9698\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\abdf61dc0d3acf07dca90bfd0e4b9698\AndroidManifest.xml:9:5-20
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:28:5-20
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\84935d9a7bf139c5fa89abb8b775db26\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\84935d9a7bf139c5fa89abb8b775db26\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.patrick.paintCamera.MainActivity
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:15:19-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b0de2a49be6dadcf29b3ec6e20e001a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b0de2a49be6dadcf29b3ec6e20e001a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\abdf61dc0d3acf07dca90bfd0e4b9698\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\abdf61dc0d3acf07dca90bfd0e4b9698\AndroidManifest.xml:5:5-7:41
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:5-19:41
+MERGED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:5-19:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4626ce2a962ba5ec7b1093591093426c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4626ce2a962ba5ec7b1093591093426c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8321a77b8cd0ba66170633b1d4a0d474\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\8321a77b8cd0ba66170633b1d4a0d474\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\82b41246e88ab3bbe7023ad0ecb60f3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\82b41246e88ab3bbe7023ad0ecb60f3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\3634f8977480a012a73642cbb8cd7e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\3634f8977480a012a73642cbb8cd7e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\f55474dd5420ab4e8e327cc76f815658\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\f55474dd5420ab4e8e327cc76f815658\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd7854eb5e076d0bdc2e3dc10a13262b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd7854eb5e076d0bdc2e3dc10a13262b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b0d56a96d92eb90eb43a0be1b1013b29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b0d56a96d92eb90eb43a0be1b1013b29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2786093aed6c4dd8b79f54f0f7bfadc1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2786093aed6c4dd8b79f54f0f7bfadc1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c350e335ea289f5319b3fa5755d2873a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c350e335ea289f5319b3fa5755d2873a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b6fc3e37a431121c53516b9eb475d4cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b6fc3e37a431121c53516b9eb475d4cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\76554bae56ac91da4f0c10ecce9d13b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\76554bae56ac91da4f0c10ecce9d13b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2e4133b0aa5f513ac5279ee415539e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2e4133b0aa5f513ac5279ee415539e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6e1cc48e3ce48473de847012768ebc67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6e1cc48e3ce48473de847012768ebc67\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\b7bc69f4804fc1d36525e8aa2e905717\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\84935d9a7bf139c5fa89abb8b775db26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\84935d9a7bf139c5fa89abb8b775db26\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\48f5954674a4218fdf21c25bbc0825de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\48f5954674a4218fdf21c25bbc0825de\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\067182dbf2eec99761b4d7f1f08923c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\067182dbf2eec99761b4d7f1f08923c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4ef543542325512669c71587f871c2c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4ef543542325512669c71587f871c2c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\af38102241dd49dd08c46d1c89eec8f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\af38102241dd49dd08c46d1c89eec8f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01a5459126bbca59495f3c5e56e372d8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\01a5459126bbca59495f3c5e56e372d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3940ac512193bc524f67ec501f26fcd2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3940ac512193bc524f67ec501f26fcd2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1970293dc504cfe2d58fb8911fbbc2c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1970293dc504cfe2d58fb8911fbbc2c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5a27209f07f2d94900586069f88b6761\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\5a27209f07f2d94900586069f88b6761\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\5f41be7dcb4c5bc8dc2b644c81178765\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\5f41be7dcb4c5bc8dc2b644c81178765\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\72804fc2f8dd7caa9565e1593271d239\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\72804fc2f8dd7caa9565e1593271d239\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Patrick\Desktop\WORK\PaintCamera\app\src\main\AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:23:5-60
+	android:name
+		ADDED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:23:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from [:cameraview] C:\Users\Patrick\Desktop\WORK\PaintCamera\cameraview\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:25:9-57
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f57f060eb157c0081d66e24ace329fa9\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Patrick\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\f2bd71fcd17f98a6e7179e67c2cd0810\AndroidManifest.xml:26:9-47

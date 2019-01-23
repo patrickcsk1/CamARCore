@@ -1,0 +1,188 @@
+package com.example.patrick.paintCamera;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Dibujo extends View {
+
+    public LinearLayout.LayoutParams parametros;
+    private Path path = new Path();
+    private Path pathVector = new Path();
+    private Paint pincelVector = new Paint();
+    private Paint pincel = new Paint();
+
+    private TextView texto;
+    private List<Sensor> listaSensores;
+
+    private Map<Integer,Punto> puntos;
+    private float pointX=0,pointY=0;
+    private static final int FACTOR_PUNTOS = 2;
+    private int index = 0;
+    private int inicial = 0;
+    private int contadorPtosLinea = 0;
+    int flag=0;
+
+    public Dibujo(Context context) {
+        super(context);
+        init();
+    }
+
+    public Dibujo(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public Dibujo(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    public void setTexto(TextView textOut){
+        texto = textOut;
+        texto.setTextSize(12f);
+    }
+
+    public void setSensores(SensorManager sensorManager){
+        this.listaSensores = sensorManager.getSensorList(Sensor.TYPE_ALL);
+        Log.d("BBB", "setSensores: Nro de sensores: " + this.listaSensores.size());
+        for (int i = 0; i < listaSensores.size(); i++) {
+            Log.d("BBB", "setSensores: Sensor Nro "+ ((i<10)?"0"+i:i) + ": " + this.listaSensores.get(i));
+        }
+    }
+
+    public void init(){
+        pincel.setAntiAlias(true);
+        pincel.setColor(Color.WHITE);
+        pincel.setStyle(Paint.Style.STROKE);
+        pincel.setStrokeJoin(Paint.Join.ROUND);
+        pincel.setStrokeWidth(10f);
+
+        pincelVector.setAntiAlias(true);
+        pincelVector.setColor(Color.RED);
+        pincelVector.setStyle(Paint.Style.STROKE);
+        pincelVector.setStrokeJoin(Paint.Join.ROUND);
+        pincelVector.setStrokeWidth(50f);
+
+        parametros = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        puntos = new HashMap<Integer, Punto>();
+        puntos.clear();
+        this.setBackgroundColor(Color.TRANSPARENT);
+    }
+
+    public void limpiarPantalla(){
+        texto.setText("");
+        index = 0;
+        contadorPtosLinea = 0;
+        inicial=0;
+        flag=0;
+        puntos.clear();
+        path.reset();
+        pathVector.reset();
+        postInvalidate();
+    }
+
+    private void dibujarNodos(){
+        int numPtos = contadorPtosLinea /FACTOR_PUNTOS;
+        int k = 2;
+        if(numPtos>=3){
+            int botton=inicial+k;
+            int top = inicial + contadorPtosLinea - k;
+            while(top>botton){
+                pathVector.addCircle(puntos.get(botton).getPtoX(),puntos.get(botton).getPtoY(),10f,Path.Direction.CW);
+                pathVector.addCircle(puntos.get(top).getPtoX(),puntos.get(top).getPtoY(),10f,Path.Direction.CW);
+                botton+=k;
+                top-=k;
+            }
+        }
+        pathVector.addCircle(puntos.get(inicial).getPtoX(),puntos.get(inicial).getPtoY(),15f,Path.Direction.CW);
+        pathVector.addCircle(puntos.get(inicial+contadorPtosLinea).getPtoX(),puntos.get(inicial+contadorPtosLinea).getPtoY(),15f,Path.Direction.CW);
+    }
+
+    int viewHeight = 0;
+    int viewWidth = 0;
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        Log.d("onMeasure", "onMeasure: " + getHeight());
+//        Log.d("onMeasure", "onMeasure 2: " + getMeasuredHeight());
+        viewHeight = getMeasuredHeight();
+        viewWidth = getMeasuredWidth();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        pointX = event.getX();
+        pointY = event.getY();
+        if(pointX < 0) pointX=0;
+        if(pointY < 0) pointY=0;
+        if(pointY >= viewHeight) pointY = viewHeight;
+        if(pointX >= viewWidth) pointX = viewWidth;
+
+        puntos.put(index,new Punto(pointX,pointY));
+        float diferencia,prevX=0f,prevY=0f;
+        String nombreEvento="";
+
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                nombreEvento = "ACTION_DOWN";
+                path.moveTo(pointX, pointY);
+                path.addCircle(pointX,pointY,2f,Path.Direction.CW);
+                prevX = pointX;
+                prevY = pointY;
+                index++;
+                break;
+            case MotionEvent.ACTION_MOVE:
+                nombreEvento = "ACTION_MOVE";
+                if (flag==0) {
+                    diferencia = (float) Math.sqrt(Math.pow(pointX-prevX,2) + Math.pow(pointY-prevY,2));
+                    if(diferencia<6) inicial = index;
+                    else inicial = index-1;
+                    flag=1;
+                }
+                contadorPtosLinea++;
+                path.lineTo(pointX,pointY);
+                index++;
+                break;
+            case MotionEvent.ACTION_UP:
+                nombreEvento = "ACTION_UP";
+                if(index>1) dibujarNodos();
+                puntos.clear();
+                index=0;
+                contadorPtosLinea=0;
+                inicial=0;
+                flag=0;
+                break;
+        }
+        String coordenada = "Event: " + nombreEvento;
+        coordenada+= "\nSensor de orientacion: " + listaSensores.get(2).getName() + " - " + listaSensores.get(2).getPower();
+        coordenada+= "\nSensor de proximidad: " + listaSensores.get(4).getName() + " - " + listaSensores.get(4).getPower();
+        coordenada+= "\nX: " + pointX + "\nY: " + pointY + "\n";
+        coordenada+= "Orientación: " + event.getOrientation() + "\nRawX: " + event.getRawX() + "\nRawY: " + event.getRawY() + "\nPressure: " + event.getPressure() ;
+        texto.setText(coordenada);
+        invalidate();
+        return true;
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        canvas.drawPath(path,pincel);
+        canvas.drawPath(pathVector,pincelVector);
+    }
+}

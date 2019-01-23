@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.PixelFormat;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.util.AttributeSet;
@@ -23,7 +22,6 @@ import java.util.Map;
 public class Dibujo extends View {
 
     public LinearLayout.LayoutParams parametros;
-    public LinearLayout linearLayout;
     private Path path = new Path();
     private Path pathVector = new Path();
     private Paint pincelVector = new Paint();
@@ -32,9 +30,12 @@ public class Dibujo extends View {
     private TextView texto;
     private List<Sensor> listaSensores;
 
-    private Map<Integer,Objeto> puntos;
-    private static final int FACTOR_PUNTOS = 3;
-    private int contadorPtosLinea;
+    private Map<Integer,Punto> puntos;
+    private float pointX=0,pointY=0;
+    private static final int FACTOR_PUNTOS = 2;
+    private int index = 0;
+    private int inicial = 0;
+    private int contadorPtosLinea = 0;
     int flag=0;
 
     public Dibujo(Context context) {
@@ -59,36 +60,36 @@ public class Dibujo extends View {
 
     public void setSensores(SensorManager sensorManager){
         this.listaSensores = sensorManager.getSensorList(Sensor.TYPE_ALL);
-        Log.d("AAA", "setSensores: Nro de sensores: " + this.listaSensores.size());
+        Log.d("BBB", "setSensores: Nro de sensores: " + this.listaSensores.size());
         for (int i = 0; i < listaSensores.size(); i++) {
-            Log.d("AAA", "setSensores: Sensor Nro "+ ((i<10)?"0"+i:i) + ": " + this.listaSensores.get(i));
+            Log.d("BBB", "setSensores: Sensor Nro "+ ((i<10)?"0"+i:i) + ": " + this.listaSensores.get(i));
         }
     }
 
     public void init(){
         pincel.setAntiAlias(true);
-        pincel.setColor(Color.BLACK);
+        pincel.setColor(Color.WHITE);
         pincel.setStyle(Paint.Style.STROKE);
         pincel.setStrokeJoin(Paint.Join.ROUND);
-        pincel.setStrokeWidth(8f);
+        pincel.setStrokeWidth(10f);
 
         pincelVector.setAntiAlias(true);
         pincelVector.setColor(Color.RED);
         pincelVector.setStyle(Paint.Style.STROKE);
         pincelVector.setStrokeJoin(Paint.Join.ROUND);
-        pincelVector.setStrokeWidth(10f);
+        pincelVector.setStrokeWidth(50f);
 
         parametros = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        puntos = new HashMap<Integer, Objeto>();
-        contadorPtosLinea = 0;
-
+        puntos = new HashMap<Integer, Punto>();
+        puntos.clear();
         this.setBackgroundColor(Color.TRANSPARENT);
-//        this.setZ(5f);
-   }
+    }
 
     public void limpiarPantalla(){
         texto.setText("");
+        index = 0;
         contadorPtosLinea = 0;
+        inicial=0;
         flag=0;
         puntos.clear();
         path.reset();
@@ -96,31 +97,51 @@ public class Dibujo extends View {
         postInvalidate();
     }
 
-    private void calculos(int inicial){
+    private void dibujarNodos(){
         int numPtos = contadorPtosLinea /FACTOR_PUNTOS;
-        if(numPtos>=8){
-            for (int i = inicial; i < puntos.size(); i++) {
-                pathVector.addCircle(puntos.get(i+FACTOR_PUNTOS).getPtoX(),puntos.get(i+FACTOR_PUNTOS).getPtoY(),5f,Path.Direction.CW);
+        int k = 4;
+        if(numPtos>=3){
+            int botton=inicial+k;
+            int top = inicial + contadorPtosLinea - k;
+            while(top>botton){
+                pathVector.addCircle(puntos.get(botton).getPtoX(),puntos.get(botton).getPtoY(),10f,Path.Direction.CW);
+                pathVector.addCircle(puntos.get(top).getPtoX(),puntos.get(top).getPtoY(),10f,Path.Direction.CW);
+                botton+=k;
+                top-=k;
             }
         }
         pathVector.addCircle(puntos.get(inicial).getPtoX(),puntos.get(inicial).getPtoY(),15f,Path.Direction.CW);
-        pathVector.addCircle(puntos.get(contadorPtosLinea-1).getPtoX(),puntos.get(contadorPtosLinea-1).getPtoY(),15f,Path.Direction.CW);
+        pathVector.addCircle(puntos.get(inicial+contadorPtosLinea).getPtoX(),puntos.get(inicial+contadorPtosLinea).getPtoY(),15f,Path.Direction.CW);
     }
+
+    int viewHeight = 0;
+    int viewWidth = 0;
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        Log.d("onMeasure", "onMeasure: " + getHeight());
+//        Log.d("onMeasure", "onMeasure 2: " + getMeasuredHeight());
+        viewHeight = getMeasuredHeight();
+        viewWidth = getMeasuredWidth();
+    }
+
+    private final float[] rotationMatrix = new float[9];
+    private final float[] orientationAngles = new float[3];
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        float pointX,pointY;
         pointX = event.getX();
         pointY = event.getY();
+        if(pointX < 0) pointX=0;
+        if(pointY < 0) pointY=0;
+        if(pointY >= viewHeight) pointY = viewHeight;
+        if(pointX >= viewWidth) pointX = viewWidth;
 
-        if (pointY >= viewHeight) {
-            pointY = viewHeight;
-        }
-
-        int index = 0;
-        puntos.put(index,new Objeto(pointX,pointY));
+        puntos.put(index,new Punto(pointX,pointY));
         float diferencia,prevX=0f,prevY=0f;
         String nombreEvento="";
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 nombreEvento = "ACTION_DOWN";
@@ -134,8 +155,8 @@ public class Dibujo extends View {
                 nombreEvento = "ACTION_MOVE";
                 if (flag==0) {
                     diferencia = (float) Math.sqrt(Math.pow(pointX-prevX,2) + Math.pow(pointY-prevY,2));
-//                    if(diferencia<0.05) inicial = index;
-//                    else inicial = index-1;
+                    if(diferencia<6) inicial = index;
+                    else inicial = index-1;
                     flag=1;
                 }
                 contadorPtosLinea++;
@@ -144,11 +165,11 @@ public class Dibujo extends View {
                 break;
             case MotionEvent.ACTION_UP:
                 nombreEvento = "ACTION_UP";
-//                if(index>1) calculos();
+                if(index>1) dibujarNodos();
                 puntos.clear();
                 index=0;
                 contadorPtosLinea=0;
-//                inicial=0;
+                inicial=0;
                 flag=0;
                 break;
         }
@@ -166,18 +187,5 @@ public class Dibujo extends View {
     protected void onDraw(Canvas canvas) {
         canvas.drawPath(path,pincel);
         canvas.drawPath(pathVector,pincelVector);
-    }
-
-    int viewHeight = 0;
-    int viewWidth = 0;
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        Log.d("onMeasure", "onMeasure: " + getHeight());
-        Log.d("onMeasure", "onMeasure 2: " + getMeasuredHeight());
-
-        viewHeight = getMeasuredHeight();
-        viewWidth = getMeasuredWidth();
     }
 }

@@ -16,7 +16,6 @@ import com.google.android.cameraview.CameraView;
 public class MainActivity extends AppCompatActivity {
 
     private Dibujo dibujo;
-
     private CameraView cameraView;
     private static final int REQUEST_CAMERA_PERMISSION = 200;
 
@@ -25,18 +24,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         dibujo = findViewById(R.id.fondo);
-
-        TextView texto = findViewById(R.id.txtCoordenadas);
         SensorManager sensorManager = (SensorManager)getSystemService(this.SENSOR_SERVICE);
-        dibujo.setTexto(texto);
+        dibujo.setTexto((TextView) findViewById(R.id.txtCoordenadas));
         dibujo.setSensores(sensorManager);
-
         findViewById(R.id.botonLimpiar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dibujo.limpiarPantalla();
             }
         });
+
         cameraView = findViewById(R.id.camera);
 
         DisplayMetrics metrics = new DisplayMetrics();
@@ -45,15 +42,8 @@ public class MainActivity extends AppCompatActivity {
         int height = metrics.heightPixels;
         AspectRatio ratio = new AspectRatio(width,height-10);
         cameraView.setAspectRatio(ratio);
-//        cameraView.set
-
-        findViewById(R.id.btnFoto).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cameraView.takePicture();
-            }
-        });
     }
+
 
     @Override
     protected void onResume() {
@@ -76,5 +66,4 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         cameraView.stop();
     }
-
 }
